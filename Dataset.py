@@ -12,6 +12,12 @@ class Letters:
         self.images[1].target = 1 #T
         self.images.append(np.matrix(([0, 1, 1, 1, 0], [1, 0, 0, 0, 1], [1, 0, 0, 0, 1], [1, 0, 0, 0, 1], [0, 1, 1, 1, 0])))
         self.images[2].target = 2 #O
+        self.images.append(np.matrix(([1,1,0,0,0], [1,0,1,0,0], [0,0,0,1,0], [0,0,1,0,0], [1,1,0,0,0])))
+        self.images[0].target = 3 #D
+        self.images.append(np.matrix(([1,0,0,0,0], [1,0,0,0,0], [1,0,0,0,0], [1,0,0,0,0], [1,1,1,1,1])))
+        self.images[0].target = 4 #L
+        self.images.append(np.matrix(([1,0,0,0,1], [1,0,0,0,1], [1,0,0,0,1], [1,0,0,0,1], [1,1,1,1,1])))
+        self.images[0].target = 5 #U
 
 def flatten(image):
     return image.reshape(1, -1)
